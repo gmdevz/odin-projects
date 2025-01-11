@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("./fonts/Norse-Bold.otf") format("opentype");
+}
+
+/* For the background image */
+.banner {
+  background-image: url("./images/background-leaf.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* For the font */
+.logo-text {
+  font-family: "Norse-Bold", sans-serif;
+}
