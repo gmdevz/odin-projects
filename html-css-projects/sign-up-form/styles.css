@@ -1,16 +1,66 @@
+/* Importing the fonts */
 @font-face {
   font-family: "Norse-Bold";
   src: url("./fonts/Norse-Bold.otf") format("opentype");
 }
 
+/* Resetting the default styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 2px solid red;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  height: 100vh;
+}
+
 /* For the background image */
 .banner {
+  flex: 1;
   background-image: url("./images/background-leaf.jpg");
   background-size: cover;
   background-position: center;
+  position: relative;
+
+  border: 2px solid blue;
 }
 
 /* For the font */
 .logo-text {
   font-family: "Norse-Bold", sans-serif;
+}
+
+/* Form section */
+.form-section {
+  border: 2px solid yellow;
+  flex: 1.6;
+}
+
+/* Logo banner */
+.logo-banner {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo-banner img {
+  height: 100px;
+}
+
+.logo-banner h1 {
+  color: white;
+  font-family: "Norse-Bold", sans-serif;
+  font-size: 5rem;
 }
