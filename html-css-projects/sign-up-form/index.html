@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- Main container -->
@@ -18,7 +19,9 @@
         </div>
         <!-- Photo credit -->
         <div class="photo-credit">
-          Photo by <a href="#">[Photographer Name]</a>
+          Photo by
+          <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+          <a href="https://unsplash.com/">Unsplash</a>
         </div>
       </div>
 
@@ -42,18 +45,36 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="firstName">FIRST NAME</label>
-                <input type="text" id="firstName" name="firstName" required />
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder=""
+                  required
+                />
               </div>
               <div class="form-group">
                 <label for="lastName">LAST NAME</label>
-                <input type="text" id="lastName" name="lastName" required />
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder=""
+                  required
+                />
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
                 <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email" required />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder=""
+                  required
+                />
               </div>
               <div class="form-group">
                 <label for="phone">PHONE NUMBER</label>
@@ -64,7 +85,13 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" required />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder=""
+                  required
+                />
               </div>
               <div class="form-group">
                 <label for="confirmPassword">CONFIRM PASSWORD</label>
@@ -72,6 +99,7 @@
                   type="password"
                   id="confirmPassword"
                   name="confirmPassword"
+                  placeholder=""
                   required
                 />
               </div>
