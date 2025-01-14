@@ -13,15 +13,12 @@
   box-sizing: border-box;
 }
 
-body {
-  min-height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
 .container {
+  border: 2px solid red;
   display: flex;
-  min-height: 100vh;
+  /* justify-content: center;
+  align-items: center; */
+  height: 100vh;
 }
 
 /* For the background image */
@@ -31,6 +28,8 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
+
+  border: 2px solid blue;
 }
 
 /* For the font */
@@ -40,11 +39,13 @@ body {
 
 /* Form section */
 .form-section {
+  border: 2px solid yellow;
   flex: 1.6;
+  font-family: sans-serif;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #f9fafb;
 }
 
 .intro-text {
@@ -52,7 +53,6 @@ body {
   font-weight: bold;
   padding: 2rem 2rem;
   max-width: 70ch;
-  background-color: #f9fafb;
 }
 
 .intro-text p {
@@ -71,7 +71,7 @@ body {
   font-weight: bold;
 }
 
-.form-row {
+form-row {
   display: flex;
   gap: 2rem;
   margin-bottom: 1rem;
@@ -102,13 +102,8 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 255, 0.2);
 }
 
-.form-group input:not(:placeholder-shown):invalid {
-  border-color: red;
-}
-
 .form-footer {
   padding: 2rem;
-  background-color: #f9fafb;
 }
 
 .form-footer button {
@@ -137,13 +132,6 @@ body {
 
 /* End of form section */
 
-/* Error message */
-.error-message {
-  color: red;
-  font-size: 0.75rem;
-  margin-top: 0.25rem;
-}
-
 /* Logo banner */
 .logo-banner {
   background-color: rgba(0, 0, 0, 0.5);
@@ -164,21 +152,4 @@ body {
   color: white;
   font-family: "Norse-Bold", sans-serif;
   font-size: 5rem;
-}
-
-/* End of logo banner */
-
-/* Photo credit */
-.photo-credit {
-  position: absolute;
-  bottom: 1rem;
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-size: 0.75rem;
-}
-
-.photo-credit a {
-  color: white;
-  text-decoration: underline;
 }
