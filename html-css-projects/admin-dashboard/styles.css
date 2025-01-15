@@ -1,23 +1,86 @@
 /* Reset */
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Variables */
 :root {
-    --sidebar-color: #1992d4;
-    --main-bg-color: #e2e8f0;
+  --sidebar-color: #1992d4;
+  --main-bg-color: #e2e8f0;
 }
 
 /* Base styles */
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    min-height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  border: 2px solid red;
+}
+
+/* Header */
+.header {
+  border: 2px solid blue;
+}
+
+/* Dashboard */
+.dashboard {
+  border: 2px solid green;
+}
+
+/* Profile */
+/* Profile Pictures */
+.profile-pic,
+.profile-pic-large,
+.profile-pic.small {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  background-color: #ffd700;
+}
+
+.profile-pic-large {
+  width: 65px;
+  height: 65px;
+  background-color: #ffd700;
+}
+
+.profile-pic.small {
+  width: 35px;
+  height: 35px;
+  background-color: #1992d4;
+}
+
+/* For the trending section, add different colors for each user */
+.trend:nth-child(1) .profile-pic {
+  background-color: #1992d4;
+}
+.trend:nth-child(2) .profile-pic {
+  background-color: #ff9b9b;
+}
+.trend:nth-child(3) .profile-pic {
+  background-color: #a8a8a8;
+}
+.trend:nth-child(4) .profile-pic {
+  background-color: #ffb347;
 }
