@@ -8,6 +8,8 @@ This repository contains my solutions to various projects from The Odin Project 
 
 A responsive sign-up form with modern design and client-side validation.
 
+![Sign-up Form Preview](html-css-projects/sign-up-form/signup-form-preview.png)
+
 **Features:**
 
 - Custom styled form elements
@@ -25,6 +27,8 @@ A responsive sign-up form with modern design and client-side validation.
 ### 2. Admin Dashboard
 
 A responsive admin dashboard interface with a modern design.
+
+![Admin Dashboard Preview](html-css-projects/Admin%20Dashboard/dashboard-project.png)
 
 **Features:**
 
