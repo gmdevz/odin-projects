@@ -1,20 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>📚 My Library</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link href="style.css" rel="stylesheet">
-</head>
+  <body>
+    <header>
+      <h1>Library</h1>
+    </header>
+    <!-- Form to add a new book -->
+    <section id="add-book-section">
+      <h2>Add a New Book</h2>
+      <form id="add-book-form">
+        <input type="text" id="title" placeholder="Title" required />
+        <input type="text" id="author" placeholder="Author" required />
+        <input type="number" id="pages" placeholder="Pages" min="1" required />
+        <label> <input type="checkbox" id="read" /> Already read? </label>
+        <button type="submit">Add Book</button>
+      </form>
+    </section>
 
-<body>
-  <div class="container">
-    <h1>Library</h1>
-    <div id="library"></div>
-  </div>
-  <script src="script.js"></script>
+    <!-- Container where books will be rendered -->
+    <section id="library">
+      <h2>Your Books</h2>
+      <div id="books-container"></div>
+    </section>
 
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
