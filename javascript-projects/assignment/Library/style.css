@@ -1,30 +1,68 @@
-body {}
-
-h1 {
-  text-align: center;
-  margin-top: 20px;
-}
-
-#book-form {
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 300px;
-  background-color: #f9f9f9;
-}
-
-#book-form div {
-  margin-bottom: 10px;
-}
-
-#book-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-#book-form input {
-  width: 100%;
-  padding: 8px;
+/* Reset a few defaults */
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  background: #f9fafb;
+  color: #333;
+  padding: 1rem;
+}
+
+/* Layout */
+header,
+section {
+  margin-bottom: 2rem;
+}
+h1,
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+#add-book-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+#add-book-form input[type="text"],
+#add-book-form input[type="number"] {
+  flex: 1 1 150px;
+  padding: 0.4rem;
+}
+#add-book-form button {
+  padding: 0.5rem 1rem;
+}
+
+/* Book cards */
+.book-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.book-card button {
+  align-self: flex-end;
+  margin-top: 0.5rem;
+}
+.read-true {
+  background: #e0ffe0;
+}
+.read-false {
+  background: #ffe0e0;
+}
+
+/* Responsive tweak */
+@media (min-width: 600px) {
+  #books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
 }
