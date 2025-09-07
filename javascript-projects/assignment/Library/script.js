@@ -46,8 +46,10 @@ function displayBooks() {
   container.innerHTML = ""; // Clear existing content
 
   myLibrary.forEach((book) => {
+    const buttonsContainer = document.createElement("div");
+    buttonsContainer.classList.add("buttonsContainer");
     const card = document.createElement("div");
-    card.classList.add("book");
+    card.classList.add("book-card");
     card.innerHTML = `
       <h3>${book.title}</h3>
       <p>Author: ${book.author}</p>
@@ -70,8 +72,11 @@ function displayBooks() {
       removeBook(book.id);
     });
 
-    card.appendChild(toggleBtn);
-    card.appendChild(removeBtn);
+    // card.appendChild(toggleBtn);
+    // card.appendChild(removeBtn);
+    buttonsContainer.appendChild(toggleBtn);
+    buttonsContainer.appendChild(removeBtn);
+    card.appendChild(buttonsContainer);
     container.appendChild(card);
   });
 }
