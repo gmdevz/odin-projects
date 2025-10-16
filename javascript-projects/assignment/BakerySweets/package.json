@@ -1,0 +1,22 @@
+{
+  "name": "bakery",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://gmdevz.github.io/odin-projects/BakerySweets/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build --outDir dist/BakerySweets && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "npm:rolldown-vite@7.1.14"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:rolldown-vite@7.1.14"
+    }
+  }
+}
