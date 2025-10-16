@@ -132,8 +132,7 @@ button:active {
   border-top: 6px solid #ff85a2;
   border-radius: 0 0 25px 25px;
   clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
-  box-shadow:
-    inset 0 3px 4px rgba(255, 255, 255, 0.6),
+  box-shadow: inset 0 3px 4px rgba(255, 255, 255, 0.6),
     0 8px 15px rgba(0, 0, 0, 0.25);
   z-index: 15;
 }
@@ -148,10 +147,8 @@ button:active {
   border-radius: 50% 50% 30px 30px;
   position: relative;
   border: 6px solid #ffc4d6;
-  box-shadow:
-    inset 0 4px 8px rgba(255, 255, 255, 0.9),
-    inset 0 -4px 8px rgba(255, 133, 162, 0.25),
-    0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 4px 8px rgba(255, 255, 255, 0.9),
+    inset 0 -4px 8px rgba(255, 133, 162, 0.25), 0 8px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   transition: transform 0.3s ease;
   text-align: center;
@@ -178,8 +175,7 @@ button:active {
   left: 0;
   right: 0;
   height: 60px;
-  background:
-    radial-gradient(
+  background: radial-gradient(
       circle at 20% 100%,
       transparent 15px,
       #ff85a2 15px,
@@ -488,7 +484,6 @@ p {
     align-items: center;
     justify-content: flex-start; /* stack from top */
     position: relative;
-    border-bo
   }
 
   /* Cupcake base sits below the content */
